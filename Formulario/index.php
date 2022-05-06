@@ -66,8 +66,6 @@ if ($_POST['apellido']!="") {
     array_push($_SESSION['personas'], $_POST['apellido']);
 }
 
-$nfecha=date_parse($_POST['fenac']);
-array_push($_SESSION['personas'], $_POST['nfecha']);
 
 
 print_r($_SESSION);
