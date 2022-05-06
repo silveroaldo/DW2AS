@@ -48,14 +48,20 @@
 <?php
 session_start();
 $_SESSION['personas']=$_POST;
-if ($_POST['nombre']!="") {
+if ($_POST['nombre']!=="") {
     array_push($_SESSION['personas'], $_POST['nombre']);
 }
 
-if ($_POST['apellido']!="") {
+if ($_POST['apellido']!=="") {
     array_push($_SESSION['personas'], $_POST['apellido']);
 }
 
+$nfecha=date_parse($_POST['fenac']);
+  if ($nfecha['error_count'] )
+   {
+     
+     array_push($_SESSION['personas'],$_POST['nfecha']);
+   }
 
 
 print_r($_SESSION);
