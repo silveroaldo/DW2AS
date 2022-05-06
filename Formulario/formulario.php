@@ -36,7 +36,7 @@
             <!-- Checkbox -->
             <div class="form-outline mb-4">
             <label class="form-label" for="form4Example3">Fecha de Nacimiento</label>
-                <input type="date" id="fenac" value="<?php echo date("Y-m-d")?>" class="form-control" data-date-format="DD/MMM/YYY" />
+                <input type="date" id="fenac" value="<?php echo date("Y-m-d")?>" class="form-control"/>
             </div>
 
             <!-- Submit button -->
