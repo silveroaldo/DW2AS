@@ -1,6 +1,4 @@
-<?php
-require("libros/procesar.php");
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +16,7 @@ require("libros/procesar.php");
             </tr>
         </tbody>
     </table>
-    <form class="" action="procesar.php" method="post">
+    <form class="" action="index.php" method="post">
         <form class="container">
 
          <!-- Message input -->
@@ -34,15 +32,7 @@ require("libros/procesar.php");
                 <input type="text" name="apellido" id="apellido" value="" placeholder="Ingrese su fecha de nacimiento" class="form-control" />
                 
             </div>
-
-            <div class="form-outline mb-4">
-            <label class="form-label" for="form4Example2">Correo Electronico</label>
-                <input type="text" name="ecorreo" id="correo" value="" placeholder="Ingrese su direccion de correo" class="form-control" />
-                
-            </div>
-
            
-
             <!-- Checkbox -->
             <div class="form-outline mb-4">
             <label class="form-label" for="form4Example3">Fecha de Nacimiento</label>
