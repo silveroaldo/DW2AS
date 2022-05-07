@@ -41,6 +41,7 @@
 
             <!-- Submit button -->
             <button type="submit" id="btProcesar" class="btn btn-primary btn-block mb-4">Enviar</button>
+            <button onclick="terminar()" type="submit" id="btTeminar" class="btn btn-primary btn-block mb-4" o>Terminar</button>
         </form>
 
 
@@ -63,8 +64,13 @@ $nfecha=date_parse($_POST['fenac']);
      array_push($_SESSION['personas'],$_POST['nfecha']);
    }
 
+   function terminar(){
+       session_destroy();
+   }
+
 
 print_r($_SESSION);
 ?>
+</pre>
 </body>
 </html>
