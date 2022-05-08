@@ -29,14 +29,14 @@
             <!-- Email input -->
             <div class="form-outline mb-4">
             <label class="form-label" for="form4Example2">Apellidos</label>
-                <input type="text" name="apellido" id="apellido" value="" placeholder="Ingrese su fecha de nacimiento" class="form-control" />
+                <input type="text" name="apellido" id="apellido" value="" placeholder="Ingrese su apellido" class="form-control" />
                 
             </div>
            
             <!-- Checkbox -->
             <div class="form-outline mb-4">
             <label class="form-label" for="form4Example3">Fecha de Nacimiento</label>
-                <input type="date" id="fenac" value="<?php echo date("Y-m-d")?>" class="form-control"/>
+                <input type="date" name="fecha" id="fecha"  class="form-control" date_format="DD/MMM/YYY"/>
             </div>
 
             <!-- Submit button -->
@@ -57,12 +57,6 @@ if ($_POST['apellido']!=="") {
     array_push($_SESSION['personas'], $_POST['apellido']);
 }
 
-$nfecha=date_parse($_POST['fenac']);
-  if ($nfecha['error_count'] )
-   {
-     
-     array_push($_SESSION['personas'],$_POST['nfecha']);
-   }
 
    function terminar(){
        session_destroy();
