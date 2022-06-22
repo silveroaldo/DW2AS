@@ -3,7 +3,7 @@ if ($res){
 $data=mysqli_fetch_array($res);
 }
  ?>
-<h3>Personas</h3>
+<center><h3>Personas</h3></center>
 <form class="" action="index.php" method="post">
   <input type="hidden" name="id" value="<?php if ($data['id']){ echo $data['id'];  } else { echo -1;} ?>">  <br>
 

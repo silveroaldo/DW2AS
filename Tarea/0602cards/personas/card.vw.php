@@ -1,6 +1,6 @@
 <div class="card">
   <div class="card-header">
-    <?php echo $data['apellido'].", ".$data['nombre']; ?>
+    <center><?php echo $data['apellido'].", ".$data['nombre']; ?></center>
   </div>
   <div class="card-body">
       <div class="row">
