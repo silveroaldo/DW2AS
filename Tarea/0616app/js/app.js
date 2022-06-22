@@ -13,6 +13,7 @@ function showFormCiudades(){
     $('#formPersonas').hide();
     $('#formCiudades').show();
 }
+
 function showListCiudades(){
     console.log("showListCiudades");
     $('#datosCiudades').show();
@@ -20,6 +21,7 @@ function showListCiudades(){
     $('#formPersonas').hide();
     $('#formCiudades').hide();
 }
+
 function showListPersonas(){
     console.log("hideListCiudades");
     $('#datosCiudades').hide();
@@ -27,13 +29,15 @@ function showListPersonas(){
     $('#formPersonas').hide();
     $('#formCiudades').hide();
 }
+
 function showFormPersonas(){
     console.log("showFormPersonas");
     $('#datosCiudades').hide();
     $('#datosPersonas').hide();
     $('#formPersonas').show();
     $('#formCiudades').hide();
-  }
+}
+
   function iniciarApp()
   {
     cargarPersonas();
@@ -41,4 +45,4 @@ function showFormPersonas(){
     getCiudades();
     mostrarCiudades();
   //  showListPersonas();
-  }
+}

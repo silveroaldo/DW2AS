@@ -8,6 +8,8 @@ function mostrarCiudades($link) {
       //printf("La selección devolvió %d filas.\n", mysqli_num_rows($resultado));
     }
 }
+
+
 function mostrarCiudad($link,$id){
   $sql="SELECT * FROM ciudades WHERE id=".$id;
   $resultado = mysqli_query($link, $sql);
@@ -19,6 +21,8 @@ function mostrarCiudad($link,$id){
 
 
 }
+
+
 function agregarCiudad($link,$datos){
   //print_r($datos);
   $sql='INSERT INTO ciudades(ciudad) values ("'.$datos['ciudad'] .'") ';
@@ -26,16 +30,22 @@ function agregarCiudad($link,$datos){
   if ($resultado) { return 1; } else { return 0; }
 
 }
+
+
 function editarCiudad($link,$datos){
 $sql='update ciudades set ciudad="'.$datos['ciudad'].'" where id='.$datos['id'];
 $resultado = mysqli_query($link, $sql);
 if ($resultado) { return 1; } else { return 0; }
 }
+
+
 function borrarCiudad($link,$datos ){
   $sql="delete from ciudades where id=".$datos['id'];
   $resultado = mysqli_query($link, $sql);
   if ($resultado) { return 1; } else { return 0; }
 }
+
+
 function nombreCiudad($link,$id){
    $sql="SELECT ciudad  FROM ciudades WHERE id=".$id;
   $resultado = mysqli_query($link, $sql);

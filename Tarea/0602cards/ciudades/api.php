@@ -11,7 +11,7 @@ $link=conectar();
    <head>
      <meta charset="utf-8">
      <title>Ciudades</title>
-          <link rel="stylesheet" href="/dw2_2022/node_modules/bootstrap/dist/css/bootstrap.min.css">
+          <link rel="stylesheet" href="/DW2AS/node_modules/bootstrap/dist/css/bootstrap.min.css">
    </head>
    <body>
      <?php

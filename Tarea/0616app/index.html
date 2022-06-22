@@ -20,7 +20,12 @@
 </nav>
 <!-- formulario de personas -->
 <div class="container" id="datosPersonas">
-  <a id='btNuevo'class='btn btn-success ' >Nuevo</a>
+  <a id='btNuevo'class='btn btn-success ' >Nuevo <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <circle cx="12" cy="12" r="9"></circle>
+   <line x1="9" y1="12" x2="15" y2="12"></line>
+   <line x1="12" y1="9" x2="12" y2="15"></line>
+</svg></a>
 </div>
 
 <!-- formulario de personas -->
@@ -53,12 +58,16 @@
   </div>
 
   <!-- Submit button -->
-  <button type="button" id="btProcesar" class="btn btn-primary btn-block mb-4">Send</button>
+  <button type="button" id="btProcesar" class="btn btn-primary btn-block mb-4">Enviar <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <line x1="10" y1="14" x2="21" y2="3"></line>
+   <path d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5"></path>
+</svg></button>
 </form>
 
 </div>
-<!-- formulario de ciudades -->
 
+<!-- formulario de ciudades -->
 <div class="container">
     <div id="datosCiudades">
     </div>
@@ -70,7 +79,14 @@
         <input id="idx" type="hidden" name="idx" value="">  <br>
         <label for="ciudad">Ciudad</label><br>
         <input id="ciudad" type="text" class="form-control"  name="ciudad" value=""><br>
-        <button type="button"  class="btn btn-primary" id="sendFormCiudad" >Enviar</button><a  class="btn btn-secondary" id="cancelFormCiudad" >volver</a>
+        <button type="button"  class="btn btn-primary" id="sendFormCiudad" >Enviar <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <line x1="10" y1="14" x2="21" y2="3"></line>
+   <path d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5"></path>
+</svg></button><a  class="btn btn-secondary" id="cancelFormCiudad" >Volver <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M9 13l-4 -4l4 -4m-4 4h11a4 4 0 0 1 0 8h-1"></path>
+</svg></a>
 </form>
 </div>
 
